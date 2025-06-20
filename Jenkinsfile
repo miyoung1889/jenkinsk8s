@@ -11,7 +11,10 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/miyoung1889/jenkinsk8s.git'
+        git(
+       url: 'https://github.com/miyoung1889/jenkinsk8s.git',
+       credentialsId: 'github'
+    )
       }
     }
 
