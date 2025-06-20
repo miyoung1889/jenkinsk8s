@@ -13,7 +13,9 @@ pipeline {
       steps {
         git(
        url: 'https://github.com/miyoung1889/jenkinsk8s.git',
-       credentialsId: 'github'
+       credentialsId: 'github',
+       branch: 'main'
+
     )
       }
     }
